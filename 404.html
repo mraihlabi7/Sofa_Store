@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- bootstrab -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize.css">
+    
+        <!-- Fonts -->
+        <link rel="stylesheet" href="css/fonts.css">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+        
+        <!-- swiper -->
+        <!-- مكتبه حق سلايدر للكاردات -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    
+    
+        <!-- style Css -->
+        <link rel="stylesheet" href="css/main-style.css">
+    
+    
+        <title>Sofa</title>
+    </head>
+<body dir="rtl">
+    <!-- S nav-bar -->
+    <div class="nav">
+        <a href="index.html" class="active">
+            <i class="fa-solid fa-house"></i>
+            <span >الرئسية</span>
+        </a>
+        <a href="basket.html">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span>السلة</span>
+        </a>
+        <a href="favorites.html">
+            <i class="fa-solid fa-heart"></i>
+            <span>المفضلة</span>
+        </a>
+        <a href="userProfile.html">
+            <img src="imgs/user1.webp" alt="User Img">
+            <span>User Name</span>
+        </a>
+        <div id="btn-mood">
+            <i class="fa-solid fa-moon" data-mood="dark"></i>
+        </div>
+    </div>
+    <!-- E nav-bar -->
+    <!-- S header -->
+    <div class="header">
+        <div class="container2 ">
+            <div class="form">
+                <i class="fa fa-search"></i>
+                <input type="search" required placeholder="عن ماذا تبحث؟">
+            </div>
+            <i class="fa-solid fa-bars-staggered nav shake-left-right" style="display: none;"></i>
+            <ul class="">
+                <div class="drop-down"><span>راوابط</span><i class="fa-solid fa-angle-down"></i></div>
+                <div class="list">
+                    <li><a href="#footer">تواصل معنا</a></li>
+                    <li><a href="">من نحن</a></li>
+                    <li><a href="index.html#services">خدماتنا</a></li>
+                    <li><a href="products.html">منجاتنا</a></li>
+                </div>
+            </ul>
+            <a class="logo" href="index.html#landing">
+                <img src="imgs/logo3.webp" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- E header -->
+
+
+
+    <!-- s footer -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#landing">
+                    <img src="imgs/logo3.webp" alt="logo">
+                </a>
+                <p>&copy;جميع الحقوق محفوضة 2022</p>
+            </div>
+            <div class="contact">
+                <h2>تواصل معنا</h2>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-location-dot"></i><span>الإمارات,دبي</span></a>
+                    <li><a href=""><i class="fa-solid fa-envelope"></i><span>Mrai.hlabi7@gmail.com</span></a></li>
+                    <li><a href=""><i class="fa-solid fa-phone-flip"></i><span>+967779891026</span></a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href=""></a><i class="fa-brands fa-whatsapp shake-left-right"></i></li>
+                    <li><a href=""></a><i class="fa-brands fa-instagram shake-left-right"></i></li>
+                    <li><a href=""></a><i class="fa-brands fa-snapchat shake-left-right"></i></li>
+                    <li><a href=""></a><i class="fa-brands fa-twitter shake-left-right"></i></li>
+                </ul>
+            </div>
+            <div class="help">
+                <h2>مساعدة</h2>
+                <ul>
+                    <li>سياسة الشحن</li>
+                    <li>من نحن</li>
+                    <li>الشروط والاحكام</li>
+                </ul>
+            </div>
+            <div class="email">
+                <h2>اشترك في النشرة البريدية</h2>
+                <form action="">
+                    <input type="text" placeholder="بريدك الإلكتروني">
+                    <button class="send-email"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <!-- <h5>Made by Mareai Bin Hlabi</h5> -->
+    </div>
+    <!-- E footer -->
+    
+        <!-- script js -->
+        <script src="js/index.js"></script>
+        <!-- bootstrab -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- fontawesome -->
+        <script src="js/all.min.js"></script>
+        <!-- swiper -->
+        <!-- مكتبه حق سلايدر للكاردات -->
+        <script src="js/swiper-bundle.min.js"></script>
+        <script>
+            // عشان السلايدر
+        var swiper = new Swiper(".swiper", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            centerSlide: "true",
+            fade: "true",
+            grabCursor: true,
+            loop: true,
+            // keyboard: {
+            // enabled: true,
+            // },
+            // breakpoints: {
+            // 769: {
+            //     slidesPerView: 2,
+            //     slidesPerGroup: 2,
+            // },
+            // },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+            },
+        });
+        </script>
+</body>
+</html>

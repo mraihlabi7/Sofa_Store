@@ -1,0 +1,130 @@
+
+/* ٍS productes */
+.products{
+    padding-top: 90px;
+    min-height: calc( 100vh - 230px );
+}
+.products .container2 {
+    background-color: var(--section-background);
+    padding: 30px 15px 30px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: var(--main-box-shadow);
+    position: relative;
+}
+.product{
+    display: flex;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px 3px 6%;
+    position: relative;
+    
+}
+.product-page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.product .delete{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 2.2rem;
+    color: #ae0101;
+    font-weight: 900;
+    cursor: pointer;
+}
+.product .name{
+    display: flex;
+    align-items: center;
+}
+.product .name img{
+    /* width: 15%; */
+    width: 150px;
+    margin-left: 10px;
+}
+.product .name .info h2{
+    font-size: 1.9rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.product .name .info span{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--sec-color);
+}
+.product .price{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+.product .amount{
+    display: flex;
+    align-items: center;
+}
+.product .amount svg{
+    color: var(--sec-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.product .amount span{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    font-family: cursive;
+    margin: 0 8px;
+    color: var(--main-color);
+}
+.product .sum{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    /* font-family: cursive; */
+    color: var(--main-color);
+    color: var(--sec-color);
+}
+@media (max-width:768px) {
+    .product .name img{
+        width: 100px;
+    }
+    .product{
+        padding-left: 2%;
+    }
+    .product .sum{
+        text-align: center;
+    }
+}
+@media (max-width:390px) {
+    .product {
+        padding-left: 2%;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .product .name img{
+        width: 55px;
+    }
+    .product::before{
+        top: 0px;
+        left: 5px;
+    }
+    
+}
+.totle{
+    text-align: end;
+    color: var(--main-color);
+    font-size: 2.4rem;
+    margin-left: 5%;
+    font-weight: bold;
+}
+.products .main-btn {
+    margin-top: 30px;
+    margin-right: 50%;
+    transform: translateX(50%);
+}
+.sum .sum:nth-child(1){
+    font-size: 5rem;
+}
+/* ٍE productes */

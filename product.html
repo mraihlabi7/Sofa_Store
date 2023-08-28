@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define Keywords For Search Engines -->
+    <meta name = "keywords" content = "furnitur stor , متجر سوفا , متجر اثاث , بيع الأثاث , تركيب الأثاث">
+    <!-- Define a Description of Your Web Page -->
+    <meta name=”description” content="مرحبًا بك في موقع سوفا ستور لبيع الأثاث الجميل، حيث يمكنك استكشاف عالمًا من الأناقة والتصاميم الفريدة التي ستضفي لمسة سحرية على منزلك. موقعنا هو وجهتك المثالية لتلبية احتياجاتك في إضافة لمسة جمالية ووظيفية إلى ديكور منزلك.">
+    <meta name = ”author” content = "Mareai Ben Helabi">
+    <!-- Refresh Document Every Specified Number of  Seconds -->
+    <meta http-equiv = ”Refresh” content = "300">
+
+    <!-- bootstrab -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+    
+    <!-- swiper -->
+    <!-- مكتبه حق سلايدر للكاردات -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+
+    <!-- style Css -->
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/product.css">
+
+
+    <title>Sofa</title>
+</head>
+<body dir="rtl">
+    <!-- S nav-bar -->
+    <div class="nav">
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <span >الرئسية</span>
+        </a>
+        <a class="navBasket-icon" href="basket.html">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="count">2</span>
+        </a>
+        <a href="favorites.html">
+            <i class="fa-solid fa-heart"></i>
+            <span>المفضلة</span>
+        </a>
+        <a href="userProfile.html">
+            <!-- <img src="imgs/user1.webp" alt="User Img"> -->
+            <i class="fa-solid fa-user"></i>
+            <span>User Name</span>
+        </a>
+        <div id="btn-mood">
+            <i class="fa-solid fa-moon" data-mood="dark"></i>
+        </div>
+    </div>
+    <!-- E nav-bar -->
+    <!-- S header -->
+    <div class="header">
+        <div class="container2 ">
+            <div class="form">
+                <i class="fa fa-search"></i>
+                <input type="search" required placeholder="عن ماذا تبحث؟">
+            </div>
+            <i class="fa-solid fa-bars-staggered nav shake-left-right" style="display: none;"></i>
+            <ul class="">
+                <div class="drop-down"><span>راوابط</span><i class="fa-solid fa-angle-down"></i></div>
+                <div class="list">
+                    <li><a href="#footer">تواصل معنا</a></li>
+                    <li><a href="">من نحن</a></li>
+                    <li><a href="index.html#services">خدماتنا</a></li>
+                    <li><a href="products.html">منجاتنا</a></li>
+                </div>
+            </ul>
+            <a class="logo" href="index.html#landing">
+                <img src="imgs/logo3.webp" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- E header -->
+    <!-- S poroduct info -->
+    <div class="container2 page ">
+        <div class="section">
+            <div class="product-info ">
+                <!-- <div class="imgs-container">
+                    <div class="slider-imgs">
+                        <img src="imgs/product7.webp" alt="">
+                    </div>
+                </div> -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/products/101.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/products/101.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/products/101.webp" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="info">
+                    <h2>كرسي كنب</h2>
+                    <h3>كرسي</h3>
+                    <div class="stars">
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        
+                        <span>(4.5)</span>
+                    </div>
+                    <p>تمتاز هذه الكرسي بتصميمه الفريد الذي يجمع بين الأناقة الكلاسيكية والأسلوب العصري. يتميز بخطوط أنيقة ومنحنيات جذابة تعكس الجمال والتفرد. ستلاحظ دقة التفاصيل في صنع الكرسي، مثل الخياطة الدقيقة والتفاصيل الزخرفية المتقنة، مما يضفي لمسة فخمة وراقية على المساحة المحيطة.</p>
+                    <div class="color-size"> 
+                        <div class="color">
+                            <h4>اللون:</h4>
+                            <!-- <i class="fa-solid fa-circle pink"></i>
+                            <i class="fa-solid fa-circle purple selected"></i>
+                            <i class="fa-solid fa-circle yellow"></i>
+                            <i class="fa-solid fa-circle red"></i>
+                            <i class="fa-solid fa-circle white"></i> -->
+                            <span style="background-color: #554c44;" data-sours="imgs/products/106.webp" data-price="2"></span>
+                            <span class="selected" style="background-color: #5b2018;" data-sours="imgs/products/103.webp" ></span>
+                            <span style="background-color: #335571;" data-sours="imgs/products/104.webp" ></span>
+                            <span style="background-color: #acc6a7;" data-sours="imgs/products/102.webp" ></span>
+                            <span style="background-color: #f2c55e;" data-sours="imgs/products/105.webp" ></span>
+                            <span style="background-color: #d7c7b8;" data-sours="imgs/products/101.webp" ></span>
+                        </div>
+                        <div class="size">
+                            <h4>الحجم:</h4>
+                            <span data-price="15">40cm</span>
+                            <span class="selected" data-price="20">50cm</span>
+                            <span data-price="25">70cm</span>
+                        </div>
+                    </div>
+                    <div class="price-amount">
+                        <div class="amount">
+                            <h4>الكمية:</h4>
+                            <div class="number">
+                                <div class="plus" style="display: inline-block;"><i class="fa-solid fa-circle-plus "></i></div>
+                                <span>1</span>
+                                <div class="minus" style="display: inline-block;"><i class="fa-solid fa-circle-minus"></i></div>
+                            </div>
+                        </div>
+                        <pre class="price">السعر:<span>20</span>ر.س</pre>
+                    </div>
+                    <div class="btns">
+                        <span class=" main-btn favorite" data-favorite="false"><i class="fa-regular fa-heart shake-left-right"></i></span>
+                        <a href="" class=" main-btn pay">إضافة الى السلة<i class="fa-solid fa-basket-shopping shake-left-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E poroduct info -->
+    <!-- S more -->
+    <div class="newes">
+        <div class="container2 section">
+            <div class="head-section">
+                <h2 class="main-title">المنتجات المشابهه</h2>
+                <a href="" class="see-more"><span>رؤية المزيد </span><i class="fa-solid fa-angles-left"></i></a>
+            </div>
+            <!-- عباره عن كلاسات جاهزه للسلايدر بار [swiper, swiper-wrapper, swiper-slide]  -->
+            <div class="swiper" style="padding: 12px 0;">
+                <div class="swiper-wrapper">
+                    <a href="product.html" class="product-card swiper-slide">
+                        <div class="header-card">
+                            <img src="imgs/product7.webp" alt="">
+                            <div class="info">
+                                <h4 class="name-product">كرسي كنب</h4>
+                                <p class="kind-product">كرسي</p>
+                                <ul class="colors-product">
+                                    <li class="four" data-color=""></li>
+                                    <li class="one" data-color=""></li>
+                                    <li class="two" data-color=""></li>
+                                    <li class="three" data-color=""></li>
+                                </ul>
+                                <ul class="stars-product">
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star half"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <div class="price-product">
+                                <span >100ر.س</span>
+                            </div>
+                            <div class="icon">
+                                <div class="proBasket-icon shake-left-right"><i class="fa-solid fa-basket-shopping"></i></div>
+                                <div class="proFavorite-icon shake-left-right" data-favorite="false"><i class="fa-regular fa-heart"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product-card swiper-slide">
+                        <div class="header-card">
+                            <img src="imgs/product7.webp" alt="">
+                            <div class="info">
+                                <h4 class="name-product">كرسي كنب</h4>
+                                <p class="kind-product">كرسي</p>
+                                <ul class="colors-product">
+                                    <li class="four" data-color=""></li>
+                                    <li class="one" data-color=""></li>
+                                    <li class="two" data-color=""></li>
+                                    <li class="three" data-color=""></li>
+                                </ul>
+                                <ul class="stars-product">
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star half"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <div class="price-product">
+                                <span >100ر.س</span>
+                            </div>
+                            <div class="icon">
+                                <div class="proBasket-icon shake-left-right"><i class="fa-solid fa-basket-shopping"></i></div>
+                                <div class="proFavorite-icon shake-left-right" data-favorite="true"><i class="fa-solid fa-heart"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product-card swiper-slide">
+                        <div class="header-card">
+                            <img src="imgs/product7.webp" alt="">
+                            <div class="info">
+                                <h4 class="name-product">كرسي كنب</h4>
+                                <p class="kind-product">كرسي</p>
+                                <ul class="colors-product">
+                                    <li class="four" data-color=""></li>
+                                    <li class="one" data-color=""></li>
+                                    <li class="two" data-color=""></li>
+                                    <li class="three" data-color=""></li>
+                                </ul>
+                                <ul class="stars-product">
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star half"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <div class="price-product">
+                                <span >100ر.س</span>
+                            </div>
+                            <div class="icon">
+                                <div class="proBasket-icon shake-left-right"><i class="fa-solid fa-basket-shopping"></i></div>
+                                <div class="proFavorite-icon shake-left-right" data-favorite="false"><i class="fa-regular fa-heart"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product-card swiper-slide">
+                        <div class="header-card">
+                            <img src="imgs/product7.webp" alt="">
+                            <div class="info">
+                                <h4 class="name-product">كرسي كنب</h4>
+                                <p class="kind-product">كرسي</p>
+                                <ul class="colors-product">
+                                    <li class="four" data-color=""></li>
+                                    <li class="one" data-color=""></li>
+                                    <li class="two" data-color=""></li>
+                                    <li class="three" data-color=""></li>
+                                </ul>
+                                <ul class="stars-product">
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star half"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <div class="price-product">
+                                <span >100ر.س</span>
+                            </div>
+                            <div class="icon">
+                                <div class="proBasket-icon shake-left-right"><i class="fa-solid fa-basket-shopping"></i></div>
+                                <div class="proFavorite-icon shake-left-right" data-favorite="false"><i class="fa-regular fa-heart"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="product.html" class="product-card swiper-slide">
+                        <div class="header-card">
+                            <img src="imgs/product7.webp" alt="">
+                            <div class="info">
+                                <h4 class="name-product">كرسي كنب</h4>
+                                <p class="kind-product">كرسي</p>
+                                <ul class="colors-product">
+                                    <li class="four" data-color=""></li>
+                                    <li class="one" data-color=""></li>
+                                    <li class="two" data-color=""></li>
+                                    <li class="three" data-color=""></li>
+                                </ul>
+                                <ul class="stars-product">
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star full"></i>
+                                    <i class="fa-solid fa-star half"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-card">
+                            <div class="price-product">
+                                <span >100ر.س</span>
+                            </div>
+                            <div class="icon">
+                                <div class="proBasket-icon shake-left-right"><i class="fa-solid fa-basket-shopping"></i></div>
+                                <div class="proFavorite-icon shake-left-right" data-favorite="true"><i class="fa-solid fa-heart"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-button-next" style="color: var(--sec-color);"></div>
+                <div class="swiper-button-prev" style="color: var(--sec-color);"></div>
+                <div class="swiper-pagination" style="color: var(--sec-color);"></div>
+            </div>
+        </div>
+    </div>
+    <!-- E new -->
+    <!-- s footer -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#landing">
+                    <img src="imgs/logo3.webp" alt="logo">
+                </a>
+                <p>&copy;جميع الحقوق محفوضة 2022</p>
+            </div>
+            <div class="contact">
+                <h2>تواصل معنا</h2>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-location-dot"></i><span>الإمارات,دبي</span></a>
+                    <li><a href=""><i class="fa-solid fa-envelope"></i><span>Mrai.hlabi7@gmail.com</span></a></li>
+                    <li><a href=""><i class="fa-solid fa-phone-flip"></i><span>+967779891026</span></a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href=""></a><i class="fa-brands fa-whatsapp shake-left-right"></i></li>
+                    <li><a href=""></a><i class="fa-brands fa-instagram shake-left-right"></i></li>
+                    <li><a href=""></a><i class="fa-brands fa-snapchat shake-left-right"></i></li>
+                    <li><a href=""></a><i class="fa-brands fa-twitter shake-left-right"></i></li>
+                </ul>
+            </div>
+            <div class="help">
+                <h2>مساعدة</h2>
+                <ul>
+                    <li>سياسة الشحن</li>
+                    <li>من نحن</li>
+                    <li>الشروط والاحكام</li>
+                </ul>
+            </div>
+            <div class="email">
+                <h2>اشترك في النشرة البريدية</h2>
+                <form action="">
+                    <input type="text" placeholder="بريدك الإلكتروني">
+                    <button class="send-email"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <!-- <h5>Made by Mareai Bin Hlabi</h5> -->
+    </div>
+    <!-- E footer -->
+
+
+    <!-- script js -->
+    <script src="js/product.js"></script>
+    <!-- bootstrab -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="js/all.min.js"></script>
+    <!-- swiper -->
+    <!-- مكتبه حق سلايدر للكاردات -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+
+        // عشان السلايدر
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        centerSlide: "true",
+        fade: "true",
+        grabCursor: true,
+        loop: true,
+        // keyboard: {
+        // enabled: true,
+        // },
+        // breakpoints: {
+        // 769: {
+        //     slidesPerView: 2,
+        //     slidesPerGroup: 2,
+        // },
+        // },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+        },
+    });
+    </script>
+</body>
+</html>

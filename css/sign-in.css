@@ -1,0 +1,175 @@
+/* s profile & sign in*/
+.profile,
+.sign-in{
+    margin-top: 80px;
+    text-align: center;
+}
+.profile .img{
+    max-width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--card-background);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--main-color);
+}
+.profile .img img{
+    max-width: 100%
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--main-color);
+    margin-top: 30px;
+}
+.information .top {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+.information .top > div{
+    text-align: start;
+    width: 50%;
+}
+.information .bottom {
+    margin-bottom: 30px;
+}
+.information .top > div > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.information div label{
+    color: var(--main-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.information > div input{
+    width: 44%;
+    border-radius: var(--main-radios);
+    height: 31px;
+    border: 2px solid var(--main-color);
+    color: var(--sec-color);
+    font-size: 1.9rem;
+    flex-grow: 1;
+    background: var(--card-background);
+}
+.information > div input:focus-visible{
+    outline: transparent;
+}
+.information > div input.error{
+    border-color: var(--error-color);
+}
+.information > div .message-error{
+    color: var(--error-color);
+    position: absolute;
+    top: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    left: 1%;
+}
+
+.information .top .bigger input{
+    width: 78%;
+}
+input:disabled {
+    background: transparent;
+    border: none !important;
+    font-size: 2.2rem !important;
+    font-weight: bold;
+}
+.information .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.information .btns .save{
+    display: none;
+    border-color: var(--main-color);
+    color: var(--sec-color);
+}
+.information .btns .save::after{
+    background: var(--main-color);
+}
+
+.information .btns .cancel{
+    display: none;
+}
+
+@media (max-width:992px) {
+    .profile .information{
+        padding: 0;
+        padding-bottom: 30px;
+    }
+    .information div label{
+        font-size: 2rem;
+    }
+}
+@media (max-width:768px) {
+    .information div label{
+        font-size: 2.3rem;
+    }
+}
+@media (max-width:560px) {
+    .information .top{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .information .top > div{
+        width: fit-content;
+    }
+}
+.purchases {
+    border-color: var(--main-color);
+    color: var(--sec-color);
+    display: block;
+    margin-top: 50px;
+}
+.purchases::after{
+    background: var(--main-color);
+
+}
+.profile .out{
+    border-color: var(--error-color);
+    color: var(--card-background);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.out::after{
+    background-color: var(--error-color);
+}
+.out svg {
+    transform: rotateY(180deg);
+}
+
+/* sign-in */
+.information .btns{
+    position: relative;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 10px;
+}
+.sign-in .section.container2{
+    padding: 30px 4% 30px 1%;
+}
+.information .btns .sign-btn{
+    border-color: var(--main-color);
+    color: var(--sec-color);
+}
+.information .btns .sign-btn::after{
+    background: var(--main-color);
+}
+/*E profile & sign in*/

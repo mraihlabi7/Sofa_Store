@@ -1,0 +1,475 @@
+
+/* S landing */
+.landing{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    position: relative;
+}
+.landing .container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+.landing .text{
+    position: relative;
+    backdrop-filter: blur(12px) saturate(134%);
+    -webkit-backdrop-filter: blur(12px) saturate(134%);
+    background-color: rgba(20, 27, 47, 0.16);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 15px 0px;
+    text-align: center;
+}
+.landing .text h2{
+    margin-bottom: 7px;
+    color: var(--sec-color);
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 40px;
+}
+.landing .text p{
+    margin-bottom: 20px;
+    color: var(--third-color);
+    font-size: 18px;
+}
+.landing .text .main-btn{
+    color: var(--main-color);
+    border: 1px solid var(--third-color);
+    margin-bottom: 10px;
+}
+.main-btn:after{
+    background: var(--sec-color);
+}
+.landing img{
+    border-radius: var(--main-radios);
+}
+@media (max-width: 992px) {
+    .landing img{
+        margin-top: 20px;
+    }
+}
+.go-down{
+    color: var(--sec-color);
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    animation: bouncing-down 1.5s infinite;
+    font-size: 1rem;
+}
+.go-down:hover{
+    color: var(--sec-color);
+}
+/* تنسيق شكل المثلثات الل تحت اللاندنق */
+.spikes {
+    position: relative;
+    /* background: #2c3e50;
+    height: 50vh; */
+}
+
+.spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, var(--main-color) 25%, transparent 25%), linear-gradient(225deg, var(--main-color)25%, transparent 25%);
+    background-position: 0 0;
+}
+/* E landing */
+/*S us */
+.us{
+    margin-top: 50px;
+}
+
+.us .container2 .box{
+    text-align: center;
+    background: var(--card-background);
+    border: 3px solid var(--main-color);
+    margin: 5px;
+    padding: 15px 0px;
+    border-radius: var(--main-radios);
+    box-shadow: var(--main-box-shadow);
+}
+.us .container2 .box svg{
+    color: var(--main-color);
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.us .container2 .box h4{
+    color: var(--sec-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.detailsUp-parent {
+    position: relative;
+    transition: var(--main-transition);
+    overflow: hidden;
+}
+.detailsUp-child {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--sec-color);
+    background: #BFCCB5;
+    transition: var(--main-transition);
+    /* padding-top: 32%; */
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detailsUp-child span{
+    opacity: 0;
+    transition: var(--main-transition);
+
+}
+.detailsUp-parent:hover .detailsUp-child{
+    height: 100%;
+}
+.detailsUp-parent:hover .detailsUp-child span{
+    opacity: 1;
+}
+/*E us */
+/* s new */
+.product-card{
+    border: 2px solid var(--main-color);
+    position: relative;
+    /* min-height: 160px; */
+    height: 153px;
+    width: 250px !important;
+    padding: 15px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: var(--main-radios);
+    box-shadow: var(--main-box-shadow);
+    border: 2p;
+    margin-right: 49px;
+    margin-top: 40px;
+    background-color: var(--card-background);
+}
+
+.product-card .header-card {
+    display: flex;
+    justify-content: start;
+}
+.product-card .header-card img{
+    max-width: 53%;
+    margin-top: -15%;
+    margin-right: -16%;
+    margin-left: 10px;
+}
+.product-card .header-card .info{}
+.product-card .info .name-product{
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: bold;
+     /* font-size: 1.8rem; */
+}
+.product-card .info .kind-product{
+    font-size: 1.3rem;
+    color: var(--sec-color);
+    margin-bottom: 5px;
+}
+.product-card .info .colors-product{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 5px;
+}
+.product-card .info .colors-product li{
+    height: 15px;
+    width: 15px;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+.product-card .info .colors-product li.one{
+    background-color: #EDC6B1;
+}
+.product-card .info .colors-product li.two{
+    background-color: #7C96AB;
+}
+.product-card .info .colors-product li.three{
+    background-color: #BFCCB5;
+}
+.product-card .info .colors-product li.four{
+    background-color: #BB6464;
+}
+.product-card .info .colors-product li.red{
+    background-color: #cc1e1e;
+}
+.product-card .info .colors-product li.brown{
+    background-color: #b18609;
+}
+/* .product-card .info .colors-product li.brwon{
+    background-color: #d1a96b;
+} */
+.product-card .info .stars-product{}
+.product-card .info .stars-product svg{
+    font-size: 10px;
+    /* background: #6666; */
+    color: #c8c8c8;
+}
+.product-card .info .stars-product svg.full{
+    color: #ffc107
+}
+.product-card .info .stars-product svg.half{
+
+}
+.product-card .footer-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.product-card .footer-card .price-product{}
+.product-card .footer-card .price-product span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.product-card .footer-card .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+
+}
+.product-card .footer-card .icon div{
+    cursor: pointer;
+    position: relative;
+}
+.product-card .footer-card .icon div::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.product-card .footer-card .icon svg{
+    color: var(--sec-color);
+    font-size: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+@media (max-width:769px) {
+    .product-card{
+        height: 140px !important;
+        width: 191px !important;
+        margin-right: 20px;
+    } 
+}
+/* e new */
+/* S categories*/
+.more-sell .column{
+    position: relative;
+}
+.more-sell .column:not(:last-child)::before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 90%;
+    background: var(--sec-color);
+    left: -15px;
+    top: 10%;
+    border-radius: 3px;
+}
+.categories .category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    font-size: 2rem;
+    font-weight: bold;
+    background: var(--main-color);
+    margin-top: 20%;
+    border-radius: var(--main-radios);
+}
+.categories .category li{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sec-color);
+    padding: 5px;
+    cursor: pointer;
+}
+.categories .category li:not(:last-child){
+    border-bottom: 1px solid var(--sec-color);
+}
+.categories .category li a{
+    border-radius: 50%;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    background-color: var(--sec-color);
+    padding: 4px 4px 2px;
+    color: var(--main-color);
+    animation: bouncing-right 1.5s infinite;
+    display: none;
+}
+.categories .category li.active a{
+    display: block;
+}
+.categories .prudectes{
+    padding: 0 20px;
+}
+.categories .prudectes .product-card:last-child{
+    margin-right: auto;
+}
+.categories .prudectes .product-card:first-child{
+    margin-left: auto;
+}
+@media (max-width: 768px){
+    .categories .category{
+        margin: 10px 0;
+    }
+    .categories .prudectes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+/* E categories */
+/*S  more rate sell ... */
+.more-sell .product-card {
+    width: 90% !important;
+    height: 100% !important;
+    margin-right: 10%;
+}
+/*E more rate sell ... */
+/* S services */
+.services .section{
+    background-color: var(--main-color);
+}
+/* E services */
+/* S subscribe */
+.subscribe{
+    /* margin-bottom: 50px; */
+    text-align: center;
+    background: var(--sec-color);
+    padding: 50px 0;
+}
+.subscribe h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+.subscribe form{
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--main-radios);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+@media (max-width:769px) {
+    .subscribe form{
+        width: 200px;
+        height: 30px;
+    }
+}
+.subscribe form input{
+    height: 100%;
+    width: 85%;
+    border: none;
+    padding: 0 10px;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    font-weight: bold;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid var(--main-color);
+    background: var(--card-background);
+}
+.subscribe form input:focus{
+    outline: none;
+}
+.subscribe form input::placeholder{
+    color: var(--main-color);
+}
+.subscribe form button{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    cursor: pointer;
+    border: none;
+}
+.subscribe form button svg{
+    font-size: 2rem;
+    color: var(--sec-color);
+}
+/* E subscribe */
+/* تعديلات على السلايدر بار */
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom,0px);
+    top: var(--swiper-pagination-top,auto);
+    left: 0;
+    width: 100%;
+}
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+    transform: scale(1);
+    background: var(--sec-color);
+}
+/* نهاية السلايدر */
+
+/* تعديلات على البوت ستراب */
+.row>*{
+    padding: 0 !important;
+}
+/* نهاية البوتستراب */
+
+
+
+
+/* s Animation */
+@keyframes bouncing-down {
+    0%,
+    10%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40%,
+    60% {
+        transform: translateY(-15px);
+    }
+}
+@keyframes bouncing-right {
+    0%,
+    10%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translatex(0);
+    }
+    40%,
+    60% {
+        transform: translatex(-5px);
+    }
+}
+/* E Animation */
+
+
+

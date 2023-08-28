@@ -1,0 +1,192 @@
+/* ٍS log in */
+.log-in{
+    padding-top: 60px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-in .container2{
+    display: flex;
+    padding: 0;
+    border: 2px solid var(--main-color);
+    background: var(--section-background);
+    border-radius: 20px 0 20px 0;
+    overflow: hidden;
+    box-shadow: -2px 2px 7px 0px #215340;
+    width: 100%;
+}
+@media (max-width: 488px) {
+    .log-in .container2 {
+        height: 80%;
+        margin-bottom: 20% !important;
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .log-in .container2 {
+        margin: 5%;
+    }
+}
+@media (min-width: 768px) {
+    .log-in .container2 {
+        margin: 10%;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .log-in .container2  {
+        margin: 10%;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .log-in .container2  {
+        margin: 10%;
+    }
+}
+.log-in .main-title{
+    color: var(--main-color);
+    margin-bottom: 25px;
+
+}
+.log-in .main-title::after{
+    background-color: var(--sec-color);
+}
+.log-in .main-title:hover{
+    color: var(--sec-color);
+}
+.log-in .main-title:hover::after{
+    box-shadow: var(--main-box-shadow);
+    background-color: var(--main-color);
+}
+.log-in .right{
+    flex-basis: 40%;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.log-in .right h1{
+    font-family: 'Gulzar';
+    color: var(--sec-color);
+    font-size: 6rem;
+    margin-bottom: 0;
+}
+.log-in .right .img{
+
+}
+.log-in .right .img img{
+    width: 170px;
+}
+
+.log-in .left{
+    flex-basis: 60%;
+    padding: 30px 15px 20px 5px;
+    display: flex;
+    flex-direction: column;
+}
+.log-in .left label{
+    color: var(--main-color);
+    font-weight: bolder;
+    font-size: 1.9rem;
+}
+.log-in .left>input{
+    width: 80%;
+    border-radius: var(--main-radios);
+    height: 30px;
+    border: 2px solid var(--main-color);
+    color: var(--sec-color);
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    background: var(--card-background);
+}
+.log-in .left>input:focus-visible{
+    outline: none;
+}
+.log-in .left .pass{
+    width: 80%;
+    border-radius: var(--main-radios);
+    height: 30px;
+    border: 2px solid var(--main-color);
+    color: var(--sec-color);
+    font-size: 1.9rem;
+    margin-bottom: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    background: var(--card-background);
+}
+.log-in .left .pass input{
+    border: none;
+    width: 93%;
+    height: 100%;
+    color: var(--sec-color);
+    background: var(--card-background);
+}
+.log-in .left .pass input:focus-visible{
+    outline: none;
+}
+.log-in .left .pass span{
+    cursor: pointer;
+    margin-left: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.log-in .left .pass span svg{
+    font-size: 2rem;
+}
+.log-in .left .pass span::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.log-in .left span{
+    color: var(--sec-color);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+.log-in .left .btn{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+input.error{
+    border-color: var(--error-color);
+}
+.message-error{
+    color: var(--error-color) !important;
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.2rem !important;
+    left: -27%;
+    width: 167%;
+    bottom: 100%;
+    margin: 0 !important;
+}
+.log-in .left h6{
+    color: var(--sec-color);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.log-in .left h6 a{
+    color: var(--main-color);
+    font-weight: bolder;
+    cursor: pointer;
+    border-bottom: 1px solid var(--main-color);
+}
+/* ٍE log in */
