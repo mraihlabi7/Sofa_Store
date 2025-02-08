@@ -843,4 +843,13 @@ ul {
 .example-2 .icon-content a[data-social="youtube"]~.tooltip {
     background-color: #25D366;
 }
+.subscribe.contact b{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+@media (max-width: 480px){
+    .subscribe.contact{
+        padding-bottom: 70px !important;
+    }
+}
 /* العناصر المشتركه نهاية ---------------------------------------------------------*/
